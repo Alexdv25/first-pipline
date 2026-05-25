@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Hello World Step
         run: echo "Hello, World!"
-        
+
       - name: Print the GitHub User
         run: echo "The user who triggered this workflow is ${{ github.actor }}"
 
@@ -26,4 +26,9 @@ jobs:
           echo "Building..."
           sleep 2
           echo "Done!"
-            
+
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print info
+        run: echo "This job runs in parallel!"
