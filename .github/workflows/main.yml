@@ -35,3 +35,6 @@ jobs:
 
       - name: Print CPU Information
         run: lscpu
+
+      - name: Print the Branch Name
+        run: echo "The branch that triggered the workflow is ${{ github.ref_name }}"
