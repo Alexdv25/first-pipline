@@ -30,5 +30,8 @@ jobs:
   info:
     runs-on: ubuntu-latest
     steps:
-      - name: Print info
-        run: echo "This job runs in parallel!"
+      - name: Print System Information
+        run: uname -a
+
+      - name: Print CPU Information
+        run: lscpu
